@@ -143,7 +143,7 @@ if ($_POST) {
 
     <script src="https://checkout.stripe.com/checkout.js"></script>
 	<script>
-				
+				action();
 				$('#occupation, #employer', '#other_amount').on("keyup", action);
 
 				$("body").on('keyup', "#occupation", action);
@@ -153,7 +153,7 @@ if ($_POST) {
 				$('#other_amount').on("change", action);
 
 				function action() {
-					console.log("Running");
+					//console.log("Running");
 				    if( $('#occupation').val().length > 0 && $('#employer').val().length > 0 && $('#other_amount').val() != '' ) {
 				        $('#donateButton').prop("disabled", false);
 				    } else {
