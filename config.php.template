@@ -1,0 +1,12 @@
+<?php
+
+$header = "HEADER TEXT";
+
+$footer = "Political advertisement paid for and approved by FOOTER TEXT";
+
+$STRIPE_SECRET_KEY = "SECRET KEY";
+$STRIPE_PUBLIC_KEY = "PUBLIC KEY";
+
+
+
+?>
