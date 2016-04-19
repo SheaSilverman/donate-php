@@ -103,7 +103,7 @@ if ($_POST) {
 						<div class="col-md-6">
 							<div class="input-group input-group-lg">
 							  <span class="input-group-addon">$</span>
-							  <input type="number" min="1.00" id="other_amount" name="other_amount" class="form-control" aria-label="Amount (to the nearest dollar)">
+							  <input type="number" min="1.00" max="2500.00"  id="other_amount" name="other_amount" class="form-control" aria-label="Amount (to the nearest dollar)">
 							  <!-- <span class="input-group-addon">.00</span> -->
 							</div>
 						</div>
@@ -163,7 +163,7 @@ if ($_POST) {
 
 				var handler = StripeCheckout.configure({
 					key: '<?php echo $STRIPE_PUBLIC_KEY; ?>',
-					image: '/img/documentation/checkout/marketplace.png',
+					//image: '/img/documentation/checkout/marketplace.png',
 					locale: 'auto',
 					token: function(token) {
 						// Use the token to create the charge with a server-side script.
