@@ -14,10 +14,10 @@ if ($_POST) {
                                 "currency" => "usd",
                                 "card" => $_POST['stripe_token'],
                                 "description" => "Shea Silverman Campaign Donation",
-                                "metadata" => array("occupation" => $_POST['occupation'], "employer" => $_POST['employer']),
+                                "metadata" => array("email" => $_POST['email'], "occupation" => $_POST['occupation'], "employer" => $_POST['employer']),
                                ));
     $success = '<div class="alert alert-success">
-                <strong>Success!</strong> Your payment was successful.
+                <strong>Success!</strong> Your donation was successful.  Thank you for your support.
                 </div>';
   }
   catch (Exception $e) {
@@ -192,6 +192,10 @@ if ($_POST) {
 					    })).append(jQuery('<input>', {
 					        'name': 'amount',
 					        'value': $('#other_amount').val() * 100,
+					        'type': 'hidden'
+					    })).append(jQuery('<input>', {
+					        'name': 'email',
+					        'value': token.email,
 					        'type': 'hidden'
 					    }));
 
