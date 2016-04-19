@@ -207,6 +207,11 @@ if ($_POST) {
 				$('#donateButton').on('click', function(e) {
 					// Open Checkout with further options
 					var amount = $("#other_amount").val();
+					if (amount < 0.50 || amount > 1000.00) {
+						alert("Sorry.  The donation amount must be between $0.50 and $1000.00.");
+						return 1;
+					}
+
 					amount = amount * 100;
 					handler.open({
 					  name: 'Shea Silverman',
