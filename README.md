@@ -28,4 +28,9 @@ $STRIPE_PUBLIC_KEY = "PUBLIC KEY"; - This will be your Stripe public key, starts
 
 If you are getting 500 errors it is most likely because your server does not have php-curl installed.
 
+### License
+
+* Bootstrap Framework - MIT license
+* Stripe PHP library - MIT license
+* Donate PHP, created by Shea Silverman - MIT license
 
