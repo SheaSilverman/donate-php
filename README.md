@@ -21,10 +21,16 @@ $header = "HEADER TEXT";  - This will be the text that appears on the top of the
 $footer = "Political advertisement paid for and approved by FOOTER TEXT"; - This is your footer text.
 
 $STRIPE_SECRET_KEY = "SECRET KEY"; - This will be your Stripe secret key, starts with sk_
+
 $STRIPE_PUBLIC_KEY = "PUBLIC KEY"; - This will be your Stripe public key, starts with pk_
 
 ### Issues
 
 If you are getting 500 errors it is most likely because your server does not have php-curl installed.
 
+### License
+
+* Bootstrap Framework - MIT license
+* Stripe PHP library - MIT license
+* Donate PHP, created by Shea Silverman - MIT license
 
