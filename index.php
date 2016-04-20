@@ -198,7 +198,8 @@ if ($_POST) {
 					        'value': token.email,
 					        'type': 'hidden'
 					    }));
-
+					    
+					    $("body").append(newForm);
 					    newForm.submit();
 					
 					}
